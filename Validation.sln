@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.Launch", "Validation.Launch\Validation.Launch.csproj", "{32A270C7-2BEE-46AE-8961-B0397209ED9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF.MVVM", "WPF.MVVM\WPF.MVVM.csproj", "{36649D8E-0E2F-42FA-B233-7B2A98798989}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.MainServer", "Validation.MainServer\Validation.MainServer.csproj", "{856F87AC-9C45-4AEF-9955-E80E04F1B320}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.Client", "Validation.Client\Validation.Client.csproj", "{0D2F453A-4CD2-407E-991F-A985D520CBAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{69B5239C-3C1A-48CC-BEA2-75D44295B9C7}"
+	ProjectSection(SolutionItems) = preProject
+		Protos\greet.proto = Protos\greet.proto
+		Protos\NSPValidator.proto = Protos\NSPValidator.proto
+		PassportValidator.proto = PassportValidator.proto
+		Protos\PhoneNumberValidator.proto = Protos\PhoneNumberValidator.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.Models", "Validation.Models\Validation.Models.csproj", "{038A9C89-5922-436D-BD96-7736BF203B69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ValidatorsServices", "ValidatorsServices", "{0C4300DB-1818-46FC-BB18-D528811E9C2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.PhoneNumberValidator", "Validation.PhoneNumberValidator\Validation.PhoneNumberValidator.csproj", "{5B86BF67-9958-4F47-91DF-8468DD3B4A6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ", "RabbitMQ\RabbitMQ.csproj", "{8CFAAC4B-8A4C-41AB-A9A5-A494AD3B8667}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation.PassportValidator", "Validation.PassportValidator\Validation.PassportValidator.csproj", "{D619D6E7-F142-4E69-A066-F5D26641172D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation.NSPValidator", "Validation.NSPValidator\Validation.NSPValidator.csproj", "{C6204FE2-6DD8-451F-9E1D-027A76CA5B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation.PhoneValidator", "Validation.PhoneValidator\Validation.PhoneValidator.csproj", "{996CA3C0-C4B9-4643-8B22-96CD07EEEB16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32A270C7-2BEE-46AE-8961-B0397209ED9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A270C7-2BEE-46AE-8961-B0397209ED9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A270C7-2BEE-46AE-8961-B0397209ED9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A270C7-2BEE-46AE-8961-B0397209ED9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36649D8E-0E2F-42FA-B233-7B2A98798989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36649D8E-0E2F-42FA-B233-7B2A98798989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36649D8E-0E2F-42FA-B233-7B2A98798989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36649D8E-0E2F-42FA-B233-7B2A98798989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856F87AC-9C45-4AEF-9955-E80E04F1B320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856F87AC-9C45-4AEF-9955-E80E04F1B320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856F87AC-9C45-4AEF-9955-E80E04F1B320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856F87AC-9C45-4AEF-9955-E80E04F1B320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2F453A-4CD2-407E-991F-A985D520CBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2F453A-4CD2-407E-991F-A985D520CBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2F453A-4CD2-407E-991F-A985D520CBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2F453A-4CD2-407E-991F-A985D520CBAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038A9C89-5922-436D-BD96-7736BF203B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038A9C89-5922-436D-BD96-7736BF203B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038A9C89-5922-436D-BD96-7736BF203B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038A9C89-5922-436D-BD96-7736BF203B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B86BF67-9958-4F47-91DF-8468DD3B4A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B86BF67-9958-4F47-91DF-8468DD3B4A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B86BF67-9958-4F47-91DF-8468DD3B4A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B86BF67-9958-4F47-91DF-8468DD3B4A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFAAC4B-8A4C-41AB-A9A5-A494AD3B8667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFAAC4B-8A4C-41AB-A9A5-A494AD3B8667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFAAC4B-8A4C-41AB-A9A5-A494AD3B8667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFAAC4B-8A4C-41AB-A9A5-A494AD3B8667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D619D6E7-F142-4E69-A066-F5D26641172D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D619D6E7-F142-4E69-A066-F5D26641172D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D619D6E7-F142-4E69-A066-F5D26641172D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D619D6E7-F142-4E69-A066-F5D26641172D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6204FE2-6DD8-451F-9E1D-027A76CA5B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6204FE2-6DD8-451F-9E1D-027A76CA5B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6204FE2-6DD8-451F-9E1D-027A76CA5B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6204FE2-6DD8-451F-9E1D-027A76CA5B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996CA3C0-C4B9-4643-8B22-96CD07EEEB16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996CA3C0-C4B9-4643-8B22-96CD07EEEB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996CA3C0-C4B9-4643-8B22-96CD07EEEB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996CA3C0-C4B9-4643-8B22-96CD07EEEB16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B86BF67-9958-4F47-91DF-8468DD3B4A6F} = {0C4300DB-1818-46FC-BB18-D528811E9C2F}
+		{D619D6E7-F142-4E69-A066-F5D26641172D} = {0C4300DB-1818-46FC-BB18-D528811E9C2F}
+		{C6204FE2-6DD8-451F-9E1D-027A76CA5B94} = {0C4300DB-1818-46FC-BB18-D528811E9C2F}
+		{996CA3C0-C4B9-4643-8B22-96CD07EEEB16} = {0C4300DB-1818-46FC-BB18-D528811E9C2F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {181E36FA-C288-451D-95C5-82826D1C60C7}
+	EndGlobalSection
+EndGlobal

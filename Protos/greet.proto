@@ -1,0 +1,72 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+
+option csharp_namespace = "Validation.MainServer";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  rpc Validate (RecordsRequest) returns (RecordsResponse);
+}
+
+message RecordsRequest{
+	repeated RecordRequest records = 1;
+	//senderID
+}
+
+message RecordRequest{
+	NSP nsp = 1;
+	google.protobuf.Timestamp birthday = 2;
+	repeated string emails = 3;
+	repeated string addresses = 4;
+	repeated string phoneNumbers = 5;
+	string passportInfo = 6;
+}
+
+message RecordsResponse{
+	repeated RecordResponse records = 1;
+	//balance
+}
+
+message RecordResponse{
+	RecordRequest record = 1;
+	RecordValidationResult validationResult = 2;
+}
+
+message RecordValidationResult{
+	NSPValidationResult nsp = 1;
+	ValidationDateTimeResult birthday = 2;
+	repeated ValidationResult emails = 3;
+	repeated ValidationResult addresses = 4;
+	repeated ValidationResult phoneNumbers = 5;
+	ValidationResult passportData = 6;
+}
+
+message NSPValidationResult{
+	ValidationResult name = 1;
+	ValidationResult surname = 2;
+	ValidationResult patronymic = 3;
+}
+
+message ValidationResult{
+	string value = 1;
+	bool isValid = 2;
+}
+
+message ValidationDateTimeResult{
+	google.protobuf.Timestamp value = 1;
+	bool isValid = 2;
+}
+
+message NSP{
+	string name = 1;
+	string surname = 2;
+	string patronymic = 3;
+}
+
+
+
+
+

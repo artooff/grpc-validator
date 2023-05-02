@@ -1,0 +1,20 @@
+{
+  "NSPValidator": {
+    "Hostname": "localhost",
+    "RequestQueueName": "NSPRequestQueue",
+    "AllowedPort": "*"
+  },
+
+  "PassportValidator": {
+    "Hostname": "localhost",
+    "RequestQueueName": "PassportRequestQueue1",
+    "AllowedPort": "*"
+  },
+
+  "PhoneValidator": {
+    "Hostname": "localhost",
+    "RequestQueueName": "PhoneRequestQueue",
+    "AllowedPort": "*"
+  }
+}
+

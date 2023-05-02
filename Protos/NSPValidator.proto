@@ -1,0 +1,37 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+
+option csharp_namespace = "Validation.NSPValidation";
+
+package Validator;
+
+service NSPValidator {
+  rpc Validate (NSPRequest) returns (NSPResponse);
+}
+
+message NSPRequest {
+  NSP nsp = 1;
+}
+
+message NSPResponse {
+  NSPValidationResult result = 1;
+  bool isSuccess = 2;
+}
+
+message NSPValidationResult {
+  StringValidationResult Name = 1;
+  StringValidationResult Surname = 2;
+  StringValidationResult Patronymic = 3;
+}
+
+message StringValidationResult {
+  string value = 1;
+  bool isValid = 2;
+}
+
+message NSP {
+  string name = 1;
+  string surname = 2;
+  string patronymic = 3;
+}

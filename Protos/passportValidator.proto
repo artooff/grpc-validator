@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option csharp_namespace = "Validation.PassportValidator";
+
+package greet;
+
+// The greeting service definition.
+service PassportValidator {
+
+}
+

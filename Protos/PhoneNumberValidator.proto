@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "Validation.PhoneNumberValidation";
+
+package Validator;
+
+service PhoneNumberValidator {
+  rpc Validate (PhoneNumberRequest) returns (PhoneNumberResponse);
+}
+
+message PhoneNumberRequest {
+  string phoneNumber = 1;
+}
+
+message PhoneNumberResponse {
+	PhoneNumberValidationResult result = 2;
+	bool isSuccess = 3;
+}
+
+message PhoneNumberValidationResult{
+	StringValidationResult phoneNumber = 1;
+}
+
+message StringValidationResult {
+  string value = 1;
+  bool isValid = 2;
+}
